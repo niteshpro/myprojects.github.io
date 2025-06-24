@@ -1,155 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Nitesh projects</title>
+    <title>Elite Cabs - Premium Taxi Service</title>
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
 
-<style>
-
-</style>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-        <div class="container">
-            <a href="#" class="navbar-brand">My Projects</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <div class="container">
+        <div class="header">
+            <h1>🚗 Elite Cabs</h1>
+            <p>Premium Taxi Service - Your Journey, Our Priority</p>
+        </div>
 
-            <div class="collapse navbar-collapse" id="navmenu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a href="https://github.com/niteshpro/" class="nav-link">My Repos </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://www.linkedin.com/in/nitesh-sharma-68597415a/" class="nav-link">Linkedin</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="about.html" class="nav-link">About Me</a>
-                    </li>
-                </ul>
+        <div class="booking-form">
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Mobile Number</label>
+                    <input type="tel" id="mobile" placeholder="Enter your mobile number" required>
+                </div>
+                <div class="form-group">
+                    <label for="from">Pick-up Location</label>
+                    <input type="text" id="from" placeholder="Enter pick-up location" required>
+                </div>
+                <div class="form-group">
+                    <label for="to">Drop-off Location</label>
+                    <input type="text" id="to" placeholder="Enter drop-off location" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Travel Date</label>
+                    <input type="date" id="date" required>
+                </div>
+                <div class="form-group" style="display: flex; align-items: end;">
+                    <button type="button" class="check-prices-btn" onclick="checkPrices()">
+                        Check Prices
+                    </button>
+                </div>
             </div>
         </div>
-    </nav>
-    <!-- criminal records entry -->
-    <div class="menu">
-        <h1>Here's the list of projects I worked on!!!</h1>
-        <div class="container-fluid">
-            <table>
-                <!-- table heading -->
-                <tr>
-                    <th>Repository </th>
-                    <th>Project details</th>
-                    <th>Link</th>
-                </tr>
-                <tr>
-                    <td>EmployeeService-WebAPI</td>
-                    <td>Web API project</td>
-                    <td><a href="https://github.com/niteshpro/EmployeeService-WebAPI">Link</a></td>
-                </tr>
-                <tr>
-                    <td>Number Loop</td>
-                    <td>Write a program and continuously ask the user to enter a number or "ok" to exit. Calculate the
-                        sum of all the previously entered numbers and display it on the console.</td>
-                    <td><a href="https://github.com/niteshpro/numberloop">Link</a></td>
-                </tr>
-                <tr>
-                    <td>Factorial of a Number</td>
-                    <td>Write a program and ask the user to enter a number. Compute the factorial of the number and
-                        print it on the console. For example, if the user enters 5, the program should calculate 5 x 4 x
-                        3 x 2 x 1 and display it as 5! = 120.</td>
-                    <td><a href="https://github.com/niteshpro/NumberFactorial">Link</a></td>
-                </tr>
-                <tr>
-                    <td>Enter 5 unique numbers</td>
-                    <td>Write a program and ask the user to enter 5 numbers. If a number has been previously entered,
-                        display an error message and ask the user to re-try. Once the user successfully enters 5 unique
-                        numbers, sort them and display the result on the console.</td>
-                    <td><a href="https://github.com/niteshpro/UniqueNumber">Link</a></td>
-                </tr>
-                <tr>
-                    <td>Reverse a String</td>
-                    <td>Write a program and ask the user to enter their name. Use an array to reverse the name and then
-                        store the result in a new string. Display the reversed name on the console.</td>
-                    <td><a href="https://github.com/niteshpro/ReversedString">Link</a></td>
-                </tr>
-                <tr>
-                    <td>divided by 3 between 1-100</td>
-                    <td>Write a program to count how many numbers between 1 and 100 are divisible by 3 with no
-                        remainder. Display the count on the console.</td>
-                    <td><a href="https://github.com/niteshpro/divisibleby3">Link</a></td>
-                </tr>
-                <tr>
-                    <td>Speed Checker</td>
-                    <td>Write a program that asks the user to enter the speed limit. Once set, the program asks for the
-                        speed of a car. If the user enters a value less than the speed limit, program should display Ok
-                        on the console. If the value is above the speed limit, the program should calculate the number
-                        of demerit points. For every 5km/hr above the speed limit, 1 demerit points should be incurred
-                        and displayed on the console. If the number of demerit points is above 12, the program should
-                        display License Suspended.</td>
-                    <td><a href="https://github.com/niteshpro/speedchecker">Link</a></td>
-                </tr>
-                <tr>
-                    <td>Comma Seperated List</td>
-                    <td>Write a program and ask the user to supply a list of comma separated numbers (e.g 5, 1, 9, 2,
-                        10). If the list is empty or includes less than 5 numbers, display "Invalid List" and ask the
-                        user to re-try; otherwise, display the 3 smallest numbers in the list.Topics Stars 0 stars</td>
-                    <td><a href="https://github.com/niteshpro/CommaSeperatedList">Link</a></td>
-                </tr>
-                <tr>
-                    <td>FacebookPostLikes</td>
-                    <td>When you post a message on Facebook, depending on the number of people who like your post,
-                        Facebook displays different information. If no one likes your post, it doesn't display anything.
-                        If only one person likes your post, it displays: [Friend's Name] likes your post. If two people
-                        like your post, it displays: [Friend 1] and [Friend 2] like you…</td>
-                    <td><a href="https://github.com/niteshpro/FacebookPostLikes">Link</a></td>
-                </tr>
-                <tr>
-                    <td>Max of All</td>
-                    <td>Write a program and ask the user to enter a series of numbers separated by comma. Find the
-                        maximum of the numbers and display it on the console. For example, if the user enters “5, 3, 8,
-                        1, 4", the program should display 8</td>
-                    <td><a href="https://github.com/niteshpro/MaxOfAll">Link</a></td>
-                </tr>
-                <tr>
-                    <td>Sum of All</td>
-                    <td>Write a program and continuously ask the user to enter a number or "ok" to exit. Calculate the
-                        sum of all the previously entered numbers and display it on the console</td>
-                    <td><a href="https://github.com/niteshpro/SumOfAll">Link</a></td>
-                </tr>
-                <tr>
-                    <td>Guess4Numbers</td>
-                    <td>Write a program that picks a random number between 1 and 10. Give the user 4 chances to guess
-                        the number. If the user guesses the number, display “You won"; otherwise, display “You lost".
-                        (To make sure the program is behaving correctly, you can display the secret number on the
-                        console first.)</td>
-                    <td><a href="https://github.com/niteshpro/Guess4Numbers">Link</a></td>
-                </tr>
-                <tr>
-                    <td>Rectangles-and-squares</td>
-                    <td>you are given a rectangular grid of dimension AXB. It is made up of square tiles of dimension
-                        1X1. you have to paint the entire grid. In one move you are allowed to perform the following
-                        operation.</td>
-                    <td><a href="https://github.com/niteshpro/Rectangles-and-squares">Link</a></td>
-                </tr>
-                <tr>
-                    <td>SummarisingString</td>
-                    <td>C# code to split the given string to a max length without cutting a word.</td>
-                    <td><a href="https://github.com/niteshpro/SummarisingString">Link</a></td>
-                </tr>
-            </table>
 
+        <div class="prices-section" id="pricesSection">
+            <h2 class="prices-title">Available Vehicles & Pricing</h2>
+            <div class="cars-grid" id="carsGrid">
+                <!-- Car cards will be populated here -->
+            </div>
+        </div>
+
+        <div class="inquiry-section" id="inquirySection">
+            <h2 style="color: #2c3e50; margin-bottom: 20px;">Booking Summary</h2>
+            <div class="selected-car-info" id="selectedCarInfo">
+                <!-- Selected car info will be displayed here -->
+            </div>
+            <button type="button" class="send-inquiry-btn" onclick="sendInquiry()">
+                Send Inquiry
+            </button>
+            <div class="success-message" id="successMessage">
+                <h3>🎉 Inquiry Sent Successfully!</h3>
+                <p>We'll contact you shortly to confirm your booking. Thank you for choosing Elite Cabs!</p>
+            </div>
         </div>
     </div>
+    <script src="./js/script.js"></script>
 
 </body>
-
 </html>
